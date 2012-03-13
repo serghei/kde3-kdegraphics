@@ -1,1 +1,0 @@
-SUBDIRS = advanced csg interior lights objects
