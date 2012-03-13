@@ -18,12 +18,19 @@
     Boston, MA 02110-1301, USA.
 */
 
+#include <config.h>
+
 #include <math.h>
 
 #include "myboost/shared_ptr.hpp"
 #include <fontconfig/fontconfig.h>
 #include <fribidi/fribidi.h>
+
+#ifdef FRIBIDI_NEW_FILENAME
+#include <fribidi/fribidi-types.h>
+#else
 #include <fribidi/fribidi_types.h>
+#endif
 
 #include "Font.h"
 #include "Glyph.h"
