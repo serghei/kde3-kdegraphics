@@ -56,6 +56,7 @@
 
 #ifndef _GSMARTPOINTER_H_
 #define _GSMARTPOINTER_H_
+#include <cstddef>
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif

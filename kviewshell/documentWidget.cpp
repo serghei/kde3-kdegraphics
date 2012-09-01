@@ -287,7 +287,8 @@ void DocumentWidget::paintEvent(QPaintEvent *e)
     if (KVSPrefs::changeColors() && KVSPrefs::renderMode() != KVSPrefs::EnumRenderMode::Paper)
     {
       // Paint widget contents with accessibility changes.
-      bitBlt ( this, destRect.topLeft(), &pageData->accessiblePixmap(), pixmapRect, CopyROP);
+      QPixmap pdpix = pageData->accessiblePixmap();
+      bitBlt ( this, destRect.topLeft(), &pdpix, pixmapRect, CopyROP);
     }
     else
     {

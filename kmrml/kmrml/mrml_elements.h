@@ -157,7 +157,7 @@ namespace KMrml
                 QDomElement elem = list.item( i ).toElement();
                 t item( elem );
                 if ( item.isValid() )
-                    append( item );
+                    this->append( item );
             }
         }
 
