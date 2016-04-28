@@ -111,7 +111,7 @@ SVGAElementImpl *SVGAElementImpl::getLink(SVGElementImpl *sourceElem)
 		}
 	}
 
-	return false;
+	return nullptr;
 }
 
 // vim:ts=4:noet
