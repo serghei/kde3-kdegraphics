@@ -91,7 +91,7 @@ kde_add_kpart( kviewerpart AUTOMOC
     pageSizeDialog.cpp pageSize.cpp sizePreview.cpp zoom.cpp
     units.cpp kvsprefs.kcfgc optionDialogGUIWidget_base.ui
     optionDialogAccessibilityWidget.ui simplePageSize.cpp
-  LINK ifaces-static kparts-shared
+  LINK ifaces-static kmultipage-shared
   DESTINATION ${PLUGIN_INSTALL_DIR}
 )
 
