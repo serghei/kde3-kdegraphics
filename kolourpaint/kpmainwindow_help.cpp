@@ -114,7 +114,7 @@ void kpMainWindow::slotHelpTakingScreenshots ()
 #if DEBUG_KP_MAIN_WINDOW
     kdDebug () << "\tdcopApps=" << dcopApps << endl;
 #endif
-    bool isRunningKDE = (dcopApps.findIndex ("kwin") >= 0);
+    bool isRunningKDE = (dcopApps.find ("kwin") != dcopApps.end());
 
 #if 0
 {
