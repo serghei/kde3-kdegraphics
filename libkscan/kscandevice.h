@@ -26,6 +26,7 @@
 #include <qobject.h>
 #include <qstrlist.h>
 #include <qsocketnotifier.h>
+#include <kdemacros.h>
 
 
 #include "kscanoption.h"
@@ -61,7 +62,7 @@ typedef enum {
  **/
 
 
-class KScanDevice : public QObject
+class KDE_EXPORT KScanDevice : public QObject
 {
     Q_OBJECT
 

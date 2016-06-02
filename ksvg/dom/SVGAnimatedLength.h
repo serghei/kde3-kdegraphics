@@ -21,12 +21,15 @@
 #ifndef SVGAnimatedLength_H
 #define SVGAnimatedLength_H
 
+#include <kdemacros.h>
+
 namespace KSVG
 {
 
 class SVGLength;
 class SVGAnimatedLengthImpl;
-class SVGAnimatedLength 
+
+class KDE_EXPORT SVGAnimatedLength
 { 
 public:
 	SVGAnimatedLength();

@@ -22,6 +22,7 @@
 #define KSVGLoader_H
 
 #include <qobject.h>
+#include <kdemacros.h>
 
 class KURL;
 
@@ -52,7 +53,8 @@ typedef struct
 class SVGImageElementImpl;
 class SVGElementImpl;
 class SVGDocumentImpl;
-class KSVGLoader : public QObject
+
+class KDE_EXPORT KSVGLoader : public QObject
 {
 Q_OBJECT
 public:

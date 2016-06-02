@@ -60,7 +60,8 @@ class SVGPathSegCurvetoCubicSmoothAbsImpl;
 class SVGPathSegCurvetoCubicSmoothRelImpl;
 class SVGPathSegCurvetoQuadraticSmoothAbsImpl;
 class SVGPathSegCurvetoQuadraticSmoothRelImpl;
-class SVGPathElementImpl : public SVGShapeImpl,
+
+class KDE_EXPORT SVGPathElementImpl : public SVGShapeImpl,
 						   public SVGTestsImpl,
 						   public SVGLangSpaceImpl,
 						   public SVGExternalResourcesRequiredImpl,

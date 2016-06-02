@@ -30,7 +30,7 @@ namespace KSVG
 {
 class SVGDocumentImpl;
 
-class SVGWindowImpl : public DOM::DomShared
+class KDE_EXPORT SVGWindowImpl : public DOM::DomShared
 {
 public:
 	SVGWindowImpl();

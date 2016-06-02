@@ -30,7 +30,7 @@ class QRect;
 namespace KSVG
 {
 
-class SVGRectImpl : public DOM::DomShared
+class KDE_EXPORT SVGRectImpl : public DOM::DomShared
 {
 public:
 	SVGRectImpl();

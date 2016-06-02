@@ -33,7 +33,8 @@ class SVGWindow;
 class SVGElement;
 class SVGSVGElement;
 class SVGDocumentImpl;
-class SVGDocument : public DOM::Document
+
+class KDE_EXPORT SVGDocument : public DOM::Document
 {
 public:
 	SVGDocument();

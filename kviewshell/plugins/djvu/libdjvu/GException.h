@@ -135,7 +135,7 @@ namespace DJVU {
     throwing and catching exceptions (see \Ref{GException.h}). These macros
     only deal with exceptions of type #GException#. */
 
-class GException {
+class DJVUAPI GException {
 public:
   enum source_type { GINTERNAL=0, GEXTERNAL, GAPPLICATION, GOTHER };
   /** Constructs a GException.  This constructor is usually called by macro
@@ -249,7 +249,7 @@ private:
 // Compiler supports ANSI C++ exceptions.
 // Defined exception macros accordingly.
 
-class GExceptionHandler {
+class DJVUAPI GExceptionHandler {
 public:
 #ifndef NO_LIBGCC_HOOKS
   static void exthrow(const GException &) no_return;

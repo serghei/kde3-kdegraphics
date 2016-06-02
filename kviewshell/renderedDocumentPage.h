@@ -16,6 +16,7 @@
 #include <qobject.h>
 #include <qstring.h>
 #include <qvaluevector.h>
+#include <kdemacros.h>
 
 class Hyperlink;
 class QPainter;
@@ -64,7 +65,7 @@ class TextSelection;
     @version 1.0.0
 */
 
-class RenderedDocumentPage : public QObject
+class KDE_EXPORT RenderedDocumentPage : public QObject
 {
   Q_OBJECT
 

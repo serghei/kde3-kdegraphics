@@ -35,7 +35,8 @@ namespace KSVG
 
 class SVGRectImpl;
 class SVGAnimatedLengthImpl;
-class SVGEllipseElementImpl : public SVGShapeImpl,
+
+class KDE_EXPORT SVGEllipseElementImpl : public SVGShapeImpl,
 							  public SVGTestsImpl,
 							  public SVGLangSpaceImpl,
 							  public SVGExternalResourcesRequiredImpl,

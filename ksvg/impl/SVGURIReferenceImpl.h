@@ -29,7 +29,8 @@ namespace KSVG
 {
 
 class SVGAnimatedStringImpl;
-class SVGURIReferenceImpl
+
+class KDE_EXPORT SVGURIReferenceImpl
 {
 public:
 	SVGURIReferenceImpl();

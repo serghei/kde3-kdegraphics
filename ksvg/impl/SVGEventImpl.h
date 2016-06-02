@@ -42,7 +42,7 @@ namespace KSVG
 {
 
 // @ecma-checked 07/07/02@
-class SVGEventImpl : public DOM::DomShared
+class KDE_EXPORT SVGEventImpl : public DOM::DomShared
 {
 public:
 	SVGEventImpl();
@@ -129,7 +129,7 @@ public:
 };
 
 // @ecma-checked 07/07/02@
-class SVGUIEventImpl : public SVGEventImpl
+class KDE_EXPORT SVGUIEventImpl : public SVGEventImpl
 {
 public:
 	SVGUIEventImpl();
@@ -173,7 +173,7 @@ public:
 
 // @ecma-checked 07/07/02@
 // Introduced in DOM Level 2: - internal
-class SVGMouseEventImpl : public SVGUIEventImpl
+class KDE_EXPORT SVGMouseEventImpl : public SVGUIEventImpl
 {
 public:
 	SVGMouseEventImpl();

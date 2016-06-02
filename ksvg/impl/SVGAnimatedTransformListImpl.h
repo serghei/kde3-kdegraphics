@@ -29,7 +29,8 @@ namespace KSVG
 {
 
 class SVGTransformListImpl;
-class SVGAnimatedTransformListImpl : public DOM::DomShared
+
+class KDE_EXPORT SVGAnimatedTransformListImpl : public DOM::DomShared
 {
 public:
 	SVGAnimatedTransformListImpl();

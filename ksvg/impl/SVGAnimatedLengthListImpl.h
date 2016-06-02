@@ -28,7 +28,7 @@
 namespace KSVG
 {
 
-class SVGAnimatedLengthListImpl : public DOM::DomShared
+class KDE_EXPORT SVGAnimatedLengthListImpl : public DOM::DomShared
 {
 public:
 	SVGAnimatedLengthListImpl();

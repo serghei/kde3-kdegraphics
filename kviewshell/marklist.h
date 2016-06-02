@@ -26,6 +26,7 @@
 #include <qpixmap.h>
 #include <qptrvector.h>
 #include <qscrollview.h>
+#include <kdemacros.h>
 
 class QCheckBox;
 class QLabel;
@@ -121,7 +122,7 @@ private:
 /****** MarkList ******/
 
 
-class MarkList: public QScrollView
+class KDE_EXPORT MarkList: public QScrollView
 {
     Q_OBJECT
 

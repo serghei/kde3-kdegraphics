@@ -34,7 +34,7 @@ class SearchWidget;
  */
 
 // TODO remove virtual inheritance for KDE 4. It's the reason for the strange DCOPObject construction
-class KMultiPage : public KParts::ReadOnlyPart, virtual public kmultipageInterface
+class KDE_EXPORT KMultiPage : public KParts::ReadOnlyPart, virtual public kmultipageInterface
 {
   Q_OBJECT
 

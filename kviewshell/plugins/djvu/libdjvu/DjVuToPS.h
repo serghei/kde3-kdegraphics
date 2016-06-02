@@ -92,7 +92,7 @@ namespace DJVU {
     Use this class to print \Ref{DjVuImage}s and \Ref{DjVuDocument}s.
     The behavior is customizable. See \Ref{DjVuToPS::Options} for the
     description of available options.*/
-class DjVuToPS
+class DJVUAPI DjVuToPS
 {
 public:
   class DecodePort;

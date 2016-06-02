@@ -43,7 +43,8 @@ class SVGShapeImpl;
 class SVGRectImpl;
 class SVGAnimatedLengthImpl;
 class SVGAnimatedEnumerationImpl;
-class SVGMaskElementImpl : public SVGElementImpl,
+
+class KDE_EXPORT SVGMaskElementImpl : public SVGElementImpl,
 						   public SVGTestsImpl,
 						   public SVGLangSpaceImpl,
 						   public SVGExternalResourcesRequiredImpl,

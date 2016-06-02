@@ -22,13 +22,15 @@
 #define KSVGTEXTCHUNK_H
 
 #include <qstringlist.h>
+#include <kdemacros.h>
 
 namespace KSVG
 {
 
 class SVGTextContentElementImpl;
 class SVGTextPositioningElementImpl;
-class KSVGTextChunk
+
+class KDE_EXPORT KSVGTextChunk
 {
 public:
 	KSVGTextChunk();

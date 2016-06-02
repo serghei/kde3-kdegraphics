@@ -27,6 +27,7 @@
 #include <qwmatrix.h>
 #include <qscrollview.h>
 #include <qstrlist.h>
+#include <kdemacros.h>
 
 #ifdef USE_KPIXMAPIO
 #include <kpixmapio.h>
@@ -71,7 +72,7 @@ extern int max_dpi;
 
 
 
-class ImageCanvas: public QScrollView
+class KDE_EXPORT ImageCanvas: public QScrollView
 {
     Q_OBJECT
     Q_ENUMS( PopupIDs )

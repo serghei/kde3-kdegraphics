@@ -54,7 +54,7 @@ class SVGAnimatedLength;
  * "http://www.w3.org/TR/SVG/shapes.html#CircleElement">9.3 The
  * 'circle' element</a>.
  */
-class SVGCircleElement : public SVGElement,
+class KDE_EXPORT SVGCircleElement : public SVGElement,
 						 public SVGTests,
 					   	 public SVGLangSpace,
 					 	 public SVGExternalResourcesRequired,

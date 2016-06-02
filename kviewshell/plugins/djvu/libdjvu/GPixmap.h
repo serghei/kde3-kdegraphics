@@ -145,7 +145,7 @@ struct GPixel
     the bottom line of the image.
  */
 
-class GPixmap : public GPEnabled
+class DJVUAPI GPixmap : public GPEnabled
 {
 protected:
   GPixmap(void);

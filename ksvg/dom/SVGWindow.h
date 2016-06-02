@@ -31,7 +31,7 @@ namespace KSVG
 class SVGDocument;
 class SVGWindowImpl;
 
-class SVGWindow 
+class KDE_EXPORT SVGWindow
 { 
 public:
 	SVGWindow();

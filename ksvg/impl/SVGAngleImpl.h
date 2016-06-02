@@ -29,7 +29,7 @@
 namespace KSVG
 {
 
-class SVGAngleImpl : public DOM::DomShared
+class KDE_EXPORT SVGAngleImpl : public DOM::DomShared
 {
 public:
 	SVGAngleImpl();

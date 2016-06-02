@@ -37,7 +37,8 @@ namespace KSVG
 class SVGUnitConverter;
 class SVGAnimatedEnumerationImpl;
 class SVGAnimatedTransformListImpl;
-class SVGGradientElementImpl : public SVGElementImpl,
+
+class KDE_EXPORT SVGGradientElementImpl : public SVGElementImpl,
 							   public SVGURIReferenceImpl,
 							   public SVGExternalResourcesRequiredImpl,
 							   public SVGStylableImpl,

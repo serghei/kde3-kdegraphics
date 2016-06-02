@@ -28,7 +28,7 @@
 namespace KSVG
 {
 
-class SVGAnimatedNumberImpl : public DOM::DomShared
+class KDE_EXPORT SVGAnimatedNumberImpl : public DOM::DomShared
 {
 public:
 	SVGAnimatedNumberImpl();

@@ -29,7 +29,8 @@ namespace KSVG
 class SVGRectImpl;
 class SVGMatrixImpl;
 class SVGElementImpl;
-class SVGLocatableImpl
+
+class KDE_EXPORT SVGLocatableImpl
 {
 public:
 	SVGLocatableImpl();

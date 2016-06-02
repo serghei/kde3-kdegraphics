@@ -34,7 +34,7 @@ class KSVGCanvas;
 class SVGRectImpl;
 class SVGMouseEventImpl;
 
-class SVGShapeImpl : public SVGElementImpl
+class KDE_EXPORT SVGShapeImpl : public SVGElementImpl
 {
 public:
 	SVGShapeImpl(DOM::ElementImpl *);

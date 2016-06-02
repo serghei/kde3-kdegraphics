@@ -44,7 +44,8 @@ class SVGAnimatedLengthImpl;
 class SVGAnimatedEnumerationImpl;
 class SVGAnimatedTransformListImpl;
 class SVGShapeImpl;
-class SVGPatternElementImpl : public SVGElementImpl,
+
+class KDE_EXPORT SVGPatternElementImpl : public SVGElementImpl,
 							  public SVGURIReferenceImpl,
 							  public SVGTestsImpl,
 							  public SVGLangSpaceImpl,

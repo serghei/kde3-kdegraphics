@@ -30,7 +30,7 @@
 namespace KSVG
 {
 
-class SVGPaintImpl : public SVGColorImpl 
+class KDE_EXPORT SVGPaintImpl : public SVGColorImpl
 {
 public:
 	SVGPaintImpl(SVGElementImpl *object);

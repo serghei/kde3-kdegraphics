@@ -31,7 +31,8 @@ namespace KSVG
 {
 class SVGElementImpl;
 class SVGICCColorImpl;
-class SVGColorImpl : public DOM::DomShared
+
+class KDE_EXPORT SVGColorImpl : public DOM::DomShared
 {
 public:
 	SVGColorImpl(SVGElementImpl *object);

@@ -21,6 +21,8 @@
 #ifndef SVGPaintServerImpl_H
 #define SVGPaintServerImpl_H
 
+#include <kdemacros.h>
+
 namespace KSVG
 {
 
@@ -28,7 +30,7 @@ class SVGDocumentImpl;
 
 class CanvasPaintServer;
 
-class SVGPaintServerImpl
+class KDE_EXPORT SVGPaintServerImpl
 {
 public:
 	SVGPaintServerImpl();

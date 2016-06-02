@@ -30,20 +30,20 @@
 #include <libart_lgpl/art_svp.h>
 #endif
 
+#include <kdemacros.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
 
-void
-art_ksvg_rgba_svp_alpha(const ArtSVP *svp,
+KDE_EXPORT void art_ksvg_rgba_svp_alpha(const ArtSVP *svp,
 		   int x0, int y0, int x1, int y1,
 		   art_u32 rgba,
 		   art_u8 *buf, int rowstride,
 		   ArtAlphaGamma *alphagamma,
 			 art_u8 *mask);
 
-void
-art_ksvg_rgb_svp_alpha_mask(const ArtSVP *svp,
+KDE_EXPORT void art_ksvg_rgb_svp_alpha_mask(const ArtSVP *svp,
 		   int x0, int y0, int x1, int y1,
 		   art_u32 rgba,
 		   art_u8 *buf, int rowstride,

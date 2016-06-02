@@ -37,7 +37,8 @@ class SVGAngleImpl;
 class SVGAnimatedAngleImpl;
 class SVGAnimatedLengthImpl;
 class SVGAnimatedEnumerationImpl;
-class SVGMarkerElementImpl : public SVGContainerImpl,
+
+class KDE_EXPORT SVGMarkerElementImpl : public SVGContainerImpl,
 							 public SVGLangSpaceImpl,
 							 public SVGExternalResourcesRequiredImpl,
 							 public SVGStylableImpl,

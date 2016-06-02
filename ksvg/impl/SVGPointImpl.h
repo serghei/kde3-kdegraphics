@@ -29,7 +29,8 @@ namespace KSVG
 {
 
 class SVGMatrixImpl;
-class SVGPointImpl : public DOM::DomShared
+
+class KDE_EXPORT SVGPointImpl : public DOM::DomShared
 {
 public:
 	SVGPointImpl();

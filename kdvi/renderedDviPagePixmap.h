@@ -25,9 +25,10 @@
 #include "renderedDocumentPagePixmap.h"
 
 #include <qobject.h>
+#include <kdemacros.h>
 
 
-class RenderedDviPagePixmap : public RenderedDocumentPagePixmap
+class KDE_EXPORT RenderedDviPagePixmap : public RenderedDocumentPagePixmap
 {
   Q_OBJECT
 

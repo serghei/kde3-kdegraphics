@@ -143,7 +143,7 @@ public:
     Any instance of a subclass of #GPEnabled# can be used with 
     smart-pointers (see \Ref{GP}).  
  */
-class GPEnabled
+class DJVUAPI GPEnabled
 {
 public:
   /// Null constructor.
@@ -176,7 +176,7 @@ private:
     in reducing the template expansion overhead.
 */
 
-class GPBase
+class DJVUAPI GPBase
 {
 public:
   /** Null Constructor. */

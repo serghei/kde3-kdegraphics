@@ -19,7 +19,7 @@
 
 // This class contains everything documentRenderer needs to know 
 // about a certain page.
-class RenderedDocumentPagePixmap: public RenderedDocumentPage, public QPixmap
+class KDE_EXPORT RenderedDocumentPagePixmap: public RenderedDocumentPage, public QPixmap
 {
   Q_OBJECT
 

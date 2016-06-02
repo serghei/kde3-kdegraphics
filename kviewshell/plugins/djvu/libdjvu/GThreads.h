@@ -502,7 +502,7 @@ public:
     (second). The flags remain locked between the moment of testing and
     modification, which guarantees, that their state cannot be changed in
     between of these operations. */
-class GSafeFlags : public GMonitor
+class DJVUAPI GSafeFlags : public GMonitor
 {
 private:
    volatile long flags;

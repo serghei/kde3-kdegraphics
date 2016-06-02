@@ -29,7 +29,8 @@ namespace KSVG
 {
 
 class SVGStringListImpl;
-class SVGTestsImpl
+
+class KDE_EXPORT SVGTestsImpl
 {
 public:
 	SVGTestsImpl();

@@ -42,6 +42,8 @@
 #include <libart_lgpl/art_render_gradient.h>
 #endif
 
+#include <kdemacros.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
@@ -63,8 +65,7 @@ struct _ArtKSVGGradientRadial {
   ArtKSVGGradientInterpolation interpolation;
 };
 
-void
-art_ksvg_render_gradient_radial (ArtRender *render,
+KDE_EXPORT void art_ksvg_render_gradient_radial (ArtRender *render,
 			    const ArtKSVGGradientRadial *gradient,
 			    ArtFilterLevel level);
 
@@ -78,8 +79,7 @@ struct _ArtKSVGGradientLinear {
   ArtKSVGGradientInterpolation interpolation;
 };
 
-void
-art_ksvg_render_gradient_linear (ArtRender *render,
+KDE_EXPORT void art_ksvg_render_gradient_linear (ArtRender *render,
 			    const ArtKSVGGradientLinear *gradient,
 			    ArtFilterLevel level);
 

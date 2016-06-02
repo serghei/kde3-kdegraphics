@@ -812,7 +812,7 @@ protected:
 };
 
 
-class GListBase : public GCont
+class DJVUAPI GListBase : public GCont
 {
 protected:
   GListBase(const Traits& traits);
@@ -1081,7 +1081,7 @@ public:
 */
 //@{
 
-class GSetBase : public GCont
+class DJVUAPI GSetBase : public GCont
 {
 protected:
   GSetBase(const Traits &traits);

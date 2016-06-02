@@ -8,7 +8,7 @@ namespace KSVG
 {
 
 class SVGDocument;
-class Worker : public QObject
+class KDE_EXPORT Worker : public QObject
 {
 Q_OBJECT
 public:

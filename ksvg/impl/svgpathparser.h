@@ -20,6 +20,8 @@
 #ifndef __SVGPATHPARSER_H__
 #define __SVGPATHPARSER_H__
 
+#include <kdemacros.h>
+
 class QString;
 
 namespace KSVG
@@ -38,7 +40,7 @@ namespace KSVG
  * svg path data commands and parameters. In the second mode, it will convert all
  * relative coordinates to absolute ones, and convert all curves to cubic beziers.
  */
-class SVGPathParser
+class KDE_EXPORT SVGPathParser
 {
 public:
 	void parseSVG( const QString &d, bool process = false );

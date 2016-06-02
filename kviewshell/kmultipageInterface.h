@@ -4,7 +4,7 @@
  
 #include <dcopobject.h>
  
-class kmultipageInterface : virtual public DCOPObject
+class KDE_EXPORT kmultipageInterface : virtual public DCOPObject
 {
   K_DCOP
        

@@ -25,13 +25,15 @@
 #include <ft2build.h>
 #include FT_FREETYPE_H
 
+#include <kdemacros.h>
+
 namespace T2P
 {
 	class Glyph;
 	class BezierPath;
 	class GlyphAffinePair;
 
-	class GlyphTracer
+    class KDE_EXPORT GlyphTracer
 	{
 	public:
 		GlyphTracer();

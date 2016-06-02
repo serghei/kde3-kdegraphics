@@ -15,6 +15,7 @@
 #include "simplePageSize.h"
 
 #include <qobject.h>
+#include <kdemacros.h>
 
 class QString;
 class QStringList;
@@ -38,7 +39,7 @@ The main difference to the SimplePageSize class are the following.
 @version 1.0.0
 */
 
-class pageSize : public QObject, public SimplePageSize
+class KDE_EXPORT pageSize : public QObject, public SimplePageSize
 {
 Q_OBJECT
 

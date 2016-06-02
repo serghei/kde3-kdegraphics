@@ -48,7 +48,7 @@ thread-safe.
 @author Wilfried Huss, Stefan Kebekus
 */
 
-class DocumentRenderer : public QObject
+class KDE_EXPORT DocumentRenderer : public QObject
 {
   Q_OBJECT
 

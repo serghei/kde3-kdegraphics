@@ -30,7 +30,8 @@ namespace KSVG
 {
 
 class SVGRectImpl;
-class SVGTextElementImpl : public SVGTextPositioningElementImpl,
+
+class KDE_EXPORT SVGTextElementImpl : public SVGTextPositioningElementImpl,
 						   public SVGTransformableImpl
 {
 public:

@@ -26,6 +26,7 @@
 #include <qcombobox.h>
 #include <qslider.h>
 #include <qlineedit.h>
+#include <kdemacros.h>
 /**
   *@author Klaas Freitag
   */
@@ -42,7 +43,7 @@ class QLabel;
  *
  * @author Klaas Freitag <freitag@suse.de>
  */
-class KScanSlider : public QFrame
+class KDE_EXPORT KScanSlider : public QFrame
 {
    Q_OBJECT
    Q_PROPERTY( int slider_val READ value WRITE slSetSlider )

@@ -27,6 +27,7 @@
 #include <qobject.h>
 #include <qptrlist.h>
 #include <qdict.h>
+#include <kdemacros.h>
 
 #include <Converter.h>
 
@@ -56,7 +57,7 @@ class CanvasClipPath;
 class CanvasPaintServer;
 
 // Must be a QObject to be able to be loaded by KLibLoader...
-class KSVGCanvas : public QObject
+class KDE_EXPORT KSVGCanvas : public QObject
 {
 Q_OBJECT
 public:

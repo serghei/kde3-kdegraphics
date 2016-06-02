@@ -31,7 +31,8 @@ namespace KSVG
 {
 
 class SVGPointListImpl;
-class SVGAnimatedPointsImpl : virtual public DOM::DomShared
+
+class KDE_EXPORT SVGAnimatedPointsImpl : virtual public DOM::DomShared
 {
 public:
 	SVGAnimatedPointsImpl();

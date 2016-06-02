@@ -51,7 +51,7 @@ class QCheckBox;
  *
  */
 
-class DeviceSelector: public KDialogBase
+class KDE_EXPORT DeviceSelector: public KDialogBase
 {
    Q_OBJECT
 public:

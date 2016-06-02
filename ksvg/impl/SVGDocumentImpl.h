@@ -66,7 +66,8 @@ class SVGScriptElementImpl;
 class SVGDescElementImpl;
 class SVGTitleElementImpl;
 class SVGUseElementImpl;
-class SVGDocumentImpl : public QObject,
+
+class KDE_EXPORT SVGDocumentImpl : public QObject,
 						public DOM::DomShared,
 						public DOM::Document,
 						public SVGDOMNodeBridge

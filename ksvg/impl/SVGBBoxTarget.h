@@ -21,11 +21,14 @@
 #ifndef SVGBBoxTarget_H
 #define SVGBBoxTarget_H
 
+#include <kdemacros.h>
+
 namespace KSVG
 {
 
 class SVGShapeImpl;
-class SVGBBoxTarget
+
+class KDE_EXPORT SVGBBoxTarget
 {
 public:
 	SVGBBoxTarget();

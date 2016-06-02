@@ -40,7 +40,7 @@ class QComboBox;
 class QRadioButton;
 class QHBoxLayout;
 
-class Previewer : public QWidget
+class KDE_EXPORT Previewer : public QWidget
 {
     Q_OBJECT
 public:

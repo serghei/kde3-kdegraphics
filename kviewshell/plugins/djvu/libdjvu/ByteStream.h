@@ -126,7 +126,7 @@ class GNativeString;
     as private members. It is therefore not possible to make multiple copies
     of instances of this class, as implied by the class semantic.  
 */
-class ByteStream : public GPEnabled
+class DJVUAPI ByteStream : public GPEnabled
 {
 public:
   class Stdio;

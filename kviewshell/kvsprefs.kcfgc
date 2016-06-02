@@ -3,3 +3,4 @@ File=kviewshell.kcfg
 ClassName=KVSPrefs
 Singleton=true
 Mutators=true
+Visibility=KDE_EXPORT

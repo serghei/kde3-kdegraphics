@@ -42,7 +42,8 @@ enum
 };
 	
 class SVGLengthImpl;
-class SVGLength
+
+class KDE_EXPORT SVGLength
 {
 public:
 	SVGLength();

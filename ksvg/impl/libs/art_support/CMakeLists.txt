@@ -11,6 +11,7 @@
 
 include_directories(
   ${CMAKE_BINARY_DIR}
+  ${KDE_INCLUDE_DIR}
   ${ART_INCLUDE_DIRS}
 )
 

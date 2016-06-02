@@ -33,7 +33,7 @@ namespace KSVG
 class SVGMatrixImpl;
 class SVGAnimatedTransformListImpl;
 
-class SVGTransformableImpl : public SVGLocatableImpl
+class KDE_EXPORT SVGTransformableImpl : public SVGLocatableImpl
 {
 public:
 	SVGTransformableImpl();

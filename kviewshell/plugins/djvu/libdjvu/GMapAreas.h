@@ -132,7 +132,7 @@ namespace DJVU {
     \end{itemize}
 */
 
-class GMapArea : public GPEnabled
+class DJVUAPI GMapArea : public GPEnabled
 {
 protected:
    GMapArea(void);

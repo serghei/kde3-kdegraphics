@@ -49,7 +49,8 @@ class SVGViewSpecImpl;
 class SVGTransformImpl;
 class SVGAnimatedLengthImpl;
 class SVGAnimationElementImpl;
-class SVGSVGElementImpl : public SVGContainerImpl,
+
+class KDE_EXPORT SVGSVGElementImpl : public SVGContainerImpl,
 						  public SVGTestsImpl,
 						  public SVGLangSpaceImpl,
 						  public SVGExternalResourcesRequiredImpl,

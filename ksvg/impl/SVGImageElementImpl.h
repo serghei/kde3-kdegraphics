@@ -42,7 +42,8 @@ class SVGSVGElementImpl;
 class SVGAnimatedLengthImpl;
 class SVGColorProfileElementImpl;
 class SVGAnimatedPreserveAspectRatioImpl;
-class SVGImageElementImpl : public QObject,
+
+class KDE_EXPORT SVGImageElementImpl : public QObject,
 							public SVGShapeImpl,
 							public SVGURIReferenceImpl,
 							public SVGTestsImpl,

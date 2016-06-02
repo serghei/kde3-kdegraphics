@@ -38,7 +38,7 @@ public:
 	QString name, internal;
 };
 
-class CanvasFactory
+class KDE_EXPORT CanvasFactory
 {
 public:
 	CanvasFactory();

@@ -204,7 +204,8 @@ class SVGAnimatedLengthListImpl;
 class SVGMatrixImpl;
 class SVGStringListImpl;
 class SVGElementImpl;
-class SVGStylableImpl
+
+class KDE_EXPORT SVGStylableImpl
 {
 public:
 	SVGStylableImpl(SVGElementImpl *object);

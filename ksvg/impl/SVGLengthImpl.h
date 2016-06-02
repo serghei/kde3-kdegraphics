@@ -39,7 +39,8 @@ enum LengthMode
 class SVGShapeImpl;
 class SVGLocatableImpl;
 class SVGElementImpl;
-class SVGLengthImpl : public DOM::DomShared
+
+class KDE_EXPORT SVGLengthImpl : public DOM::DomShared
 {
 public:
 	SVGLengthImpl(LengthMode mode = LENGTHMODE_UNKNOWN, SVGElementImpl *context = 0);

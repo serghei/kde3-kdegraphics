@@ -29,7 +29,7 @@
 namespace KSVG
 {
 
-class SVGPolygonElementImpl : public SVGPolyElementImpl, public MarkerHelper
+class KDE_EXPORT SVGPolygonElementImpl : public SVGPolyElementImpl, public MarkerHelper
 {
 public:
 	SVGPolygonElementImpl(DOM::ElementImpl *);

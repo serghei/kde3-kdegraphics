@@ -31,7 +31,7 @@ namespace KSVG
 {
 class KSVGPolygon;
 
-class SVGMatrixImpl : public DOM::DomShared
+class KDE_EXPORT SVGMatrixImpl : public DOM::DomShared
 { 
 public:
 	SVGMatrixImpl();

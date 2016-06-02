@@ -21,11 +21,12 @@
 #define __IMGSCANINFO_H__
 
 #include <qstring.h>
+#include <kdemacros.h>
 
 /* ----------------------------------------------------------------------
  *
  */
-class ImgScanInfo
+class KDE_EXPORT ImgScanInfo
 {
 public:
     ImgScanInfo();

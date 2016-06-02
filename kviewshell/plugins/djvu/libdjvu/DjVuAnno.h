@@ -110,7 +110,7 @@ class ByteStream;
     encoding are normally done by \Ref{DjVuANT::decode}() and
     \Ref{DjVuANT::encode}() functions. */
 
-class DjVuANT : public GPEnabled
+class DJVUAPI DjVuANT : public GPEnabled
 {
 protected:
       /// Constructs an empty annotation object.

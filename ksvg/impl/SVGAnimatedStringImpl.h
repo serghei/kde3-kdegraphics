@@ -29,7 +29,7 @@
 namespace KSVG
 {
 
-class SVGAnimatedStringImpl : public DOM::DomShared
+class KDE_EXPORT SVGAnimatedStringImpl : public DOM::DomShared
 {
 public:
 	SVGAnimatedStringImpl();

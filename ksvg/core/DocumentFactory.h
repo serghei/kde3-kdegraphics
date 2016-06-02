@@ -30,7 +30,8 @@ namespace KSVG
 class KSVGCanvas;
 class SVGDocument;
 class SVGDocumentImpl;
-class DocumentFactory
+
+class KDE_EXPORT DocumentFactory
 {
 public:
 	DocumentFactory();

@@ -27,7 +27,7 @@
 namespace KSVG
 {
 
-class SVGTextPathElementImpl : public SVGTextContentElementImpl,
+class KDE_EXPORT SVGTextPathElementImpl : public SVGTextContentElementImpl,
 							   public SVGURIReferenceImpl
 {
 public:

@@ -18,6 +18,7 @@
 #include <qregion.h>
 #include <qtimer.h>
 #include <qwidget.h>
+#include <kdemacros.h>
 
 class DocumentPageCache;
 class PageView;
@@ -27,7 +28,7 @@ class QPaintEvent;
 
 /* DocumentWidget */
 
-class DocumentWidget : public QWidget
+class KDE_EXPORT DocumentWidget : public QWidget
 {
   Q_OBJECT
 

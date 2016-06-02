@@ -53,7 +53,8 @@ class SVGEventListener;
 class SVGSVGElementImpl;
 class SVGMouseEventImpl;
 class SVGRegisteredEventListener;
-class SVGElementImpl : virtual public DOM::DomShared,
+
+class KDE_EXPORT SVGElementImpl : virtual public DOM::DomShared,
 							   public DOM::Element,
 							   public SVGDOMElementBridge
 {

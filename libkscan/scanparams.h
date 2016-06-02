@@ -44,7 +44,7 @@ class QButtonGroup;
 
 typedef enum { ID_SANE_DEBUG, ID_QT_IMGIO, ID_SCAN } ScanMode;
 
-class ScanParams : public QVBox
+class KDE_EXPORT ScanParams : public QVBox
 {
    Q_OBJECT
 public:

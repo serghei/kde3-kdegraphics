@@ -30,7 +30,7 @@
 namespace KSVG
 {
 
-class SVGTransformListImpl : public SVGList<SVGTransformImpl>
+class KDE_EXPORT SVGTransformListImpl : public SVGList<SVGTransformImpl>
 { 
 public:
 	KSVG_GET

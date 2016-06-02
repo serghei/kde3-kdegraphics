@@ -24,7 +24,7 @@ class QPixmap;
 class RenderedDocumentPage;
 
 
-class DocumentPageCache: public QObject
+class KDE_EXPORT DocumentPageCache: public QObject
 {
  Q_OBJECT
 

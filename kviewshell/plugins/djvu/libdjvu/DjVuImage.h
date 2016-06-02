@@ -135,7 +135,7 @@ public:
     rendering functions then can use the available components to compute a
     pixel representation of the desired segment of the DjVu image. */
 
-class DjVuImage : public DjVuPort
+class DJVUAPI DjVuImage : public DjVuPort
 {
 protected:
   DjVuImage(void);

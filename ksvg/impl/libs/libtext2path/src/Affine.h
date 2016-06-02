@@ -21,10 +21,12 @@
 #ifndef T2P_AFFINE_H
 #define T2P_AFFINE_H
 
+#include <kdemacros.h>
+
 namespace T2P
 {
 	class Point;
-	class Affine
+    class KDE_EXPORT Affine
 	{
 	public:
 		Affine();

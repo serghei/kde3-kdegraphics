@@ -9,6 +9,7 @@
 
 #include <qobject.h>
 #include <qvaluelist.h>
+#include <kdemacros.h>
 
 #define HISTORYLENGTH 10
 
@@ -31,7 +32,7 @@ bool operator!=(const HistoryItem& lhs, const HistoryItem& rhs)
 }
 
 
-class History : public QObject
+class KDE_EXPORT History : public QObject
 {
   Q_OBJECT
 

@@ -32,12 +32,14 @@
 #include <ft2build.h>
 #include FT_FREETYPE_H
 
+#include <kdemacros.h>
+
 namespace T2P
 {
 	class Font;
 	
 	// Represent one single glyph in cache
-	class Glyph
+    class KDE_EXPORT Glyph
 	{
 	public:
 		Glyph();
@@ -60,7 +62,7 @@ namespace T2P
 
 	// Is created for every character which needs to
 	// be rendered and has to be deleted by the "client"
-	class GlyphAffinePair
+    class KDE_EXPORT GlyphAffinePair
 	{
 	public:
 		GlyphAffinePair(const Glyph *glyph, const Affine &affine);
@@ -78,7 +80,7 @@ namespace T2P
 		Affine m_affine;
 	};
 
-	class GlyphSet
+    class KDE_EXPORT GlyphSet
 	{
 	public:
 		GlyphSet();
@@ -122,7 +124,7 @@ namespace T2P
 		std::list<float> m_glyphYAdvance;
 	};
 
-	class GlyphLayoutParams
+    class KDE_EXPORT GlyphLayoutParams
 	{
 	public:
 		GlyphLayoutParams();

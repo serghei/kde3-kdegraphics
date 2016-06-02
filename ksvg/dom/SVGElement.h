@@ -46,7 +46,8 @@ public:
 
 class SVGSVGElement;
 class SVGElementImpl;
-class SVGElement : public DOM::Element
+
+class KDE_EXPORT SVGElement : public DOM::Element
 {
 public:
 	SVGElement();

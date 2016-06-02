@@ -30,7 +30,8 @@
 namespace KSVG
 {
 class SVGElementImpl;
-class SVGAnimatedLengthImpl : public DOM::DomShared
+
+class KDE_EXPORT SVGAnimatedLengthImpl : public DOM::DomShared
 {
 public:
 	SVGAnimatedLengthImpl(LengthMode mode = LENGTHMODE_UNKNOWN, SVGElementImpl *object = 0);

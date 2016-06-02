@@ -28,7 +28,7 @@
 namespace KSVG
 {
 
-class SVGAnimatedEnumerationImpl : public DOM::DomShared
+class KDE_EXPORT SVGAnimatedEnumerationImpl : public DOM::DomShared
 {
 public:
 	SVGAnimatedEnumerationImpl();

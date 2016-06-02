@@ -27,26 +27,28 @@
 #include <libart_lgpl/art_filterlevel.h>
 #include <libart_lgpl/art_svp.h>
 
+#include <kdemacros.h>
+
 #define ART_END2 10
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-	 void ksvg_art_vpath_render_bez (ArtVpath **p_vpath, int *pn, int *pn_max,
+     KDE_EXPORT void ksvg_art_vpath_render_bez (ArtVpath **p_vpath, int *pn, int *pn_max,
 				double x0, double y0,
 				double x1, double y1,
 				double x2, double y2,
 				double x3, double y3,
 				double flatness);
 
-	 ArtVpath *ksvg_art_bez_path_to_vec(const ArtBpath *bez, double flatness);
+     KDE_EXPORT ArtVpath *ksvg_art_bez_path_to_vec(const ArtBpath *bez, double flatness);
 	
-	 void ksvg_art_rgb_affine_run (int *p_x0, int *p_x1, int y,
+     KDE_EXPORT void ksvg_art_rgb_affine_run (int *p_x0, int *p_x1, int y,
 			int src_width, int src_height,
 			const double affine[6]);
 
-	 void ksvg_art_rgb_affine (art_u8 *dst, int x0, int y0, int x1, int y1, int dst_rowstride,
+     KDE_EXPORT void ksvg_art_rgb_affine (art_u8 *dst, int x0, int y0, int x1, int y1, int dst_rowstride,
 			const art_u8 *src,
 			int src_width, int src_height, int src_rowstride,
 			const double affine[6],
@@ -54,13 +56,13 @@ extern "C" {
 			ArtAlphaGamma *alphagamma,
 			int alpha);
 
-	void ksvg_art_rgb_affine_clip(const ArtSVP *svp, art_u8 *dst, int x0, int y0, int x1, int y1, int dst_rowstride, int dst_channels,
+    KDE_EXPORT void ksvg_art_rgb_affine_clip(const ArtSVP *svp, art_u8 *dst, int x0, int y0, int x1, int y1, int dst_rowstride, int dst_channels,
 			const art_u8 *src,
 			int src_width, int src_height, int src_rowstride,
 			const double affine[6],
 			int alpha, const art_u8 *mask);
 
-	void ksvg_art_rgb_texture(const ArtSVP *svp, art_u8 *dst, int x0, int y0, int x1, int y1, int dst_rowstride,
+    KDE_EXPORT void ksvg_art_rgb_texture(const ArtSVP *svp, art_u8 *dst, int x0, int y0, int x1, int y1, int dst_rowstride,
 		int dst_channels,
 		const art_u8 *src,
 		int src_width, int src_height, int src_rowstride,
@@ -70,7 +72,7 @@ extern "C" {
 		int alpha,
 		const art_u8 *mask);
 
-	void ksvg_art_svp_move(ArtSVP *svp, int dx, int dy);
+    KDE_EXPORT void ksvg_art_svp_move(ArtSVP *svp, int dx, int dy);
 
 #ifdef __cplusplus
 }

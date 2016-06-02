@@ -39,7 +39,7 @@ class SVGStringListImpl;
 class SVGTransformListImpl;
 class SVGAnimatedLengthListImpl;
 
-class SVGHelperImpl
+class KDE_EXPORT SVGHelperImpl
 {
 public:
 	SVGHelperImpl();

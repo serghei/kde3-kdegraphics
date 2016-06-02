@@ -29,7 +29,7 @@
 namespace KSVG
 {
 
-class SVGZoomAndPanImpl
+class KDE_EXPORT SVGZoomAndPanImpl
 {
 public:
 	SVGZoomAndPanImpl();

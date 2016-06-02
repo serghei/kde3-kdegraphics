@@ -21,6 +21,7 @@
 #ifndef T2P_CONVERTER_H
 #define T2P_CONVERTER_H
 
+#include <kdemacros.h>
 #include "Cache.h"
 
 // FreeType 2 includes
@@ -47,7 +48,7 @@ namespace T2P
 	typedef myboost::shared_ptr<Font> SharedFont;
 	typedef myboost::shared_ptr<Glyph> SharedGlyph;
 
-	class Converter
+    class KDE_EXPORT Converter
 	{
 	public:
 		Converter(GlyphTracer *tracer);

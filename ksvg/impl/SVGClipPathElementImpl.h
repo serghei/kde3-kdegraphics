@@ -35,7 +35,8 @@ namespace KSVG
 {
 
 class SVGAnimatedEnumerationImpl;
-class SVGClipPathElementImpl : public SVGContainerImpl,
+
+class KDE_EXPORT SVGClipPathElementImpl : public SVGContainerImpl,
 							   public SVGTestsImpl,
 							   public SVGLangSpaceImpl,
 							   public SVGExternalResourcesRequiredImpl,

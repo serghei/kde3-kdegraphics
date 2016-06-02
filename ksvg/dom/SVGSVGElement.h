@@ -67,7 +67,7 @@ class SVGSVGElementImpl;
  * <a href="http://www.w3.org/TR/SVG/struct.html#NewDocument">
  * the 'svg' element</a>
  */
-class SVGSVGElement :	public SVGElement,
+class KDE_EXPORT SVGSVGElement : public SVGElement,
  					 	public SVGTests,
 					 	public SVGLangSpace,
 					 	public SVGExternalResourcesRequired,

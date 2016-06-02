@@ -29,7 +29,8 @@ namespace KSVG
 {
 
 class SVGAnimatedLengthImpl;
-class SVGRadialGradientElementImpl : public SVGGradientElementImpl
+
+class KDE_EXPORT SVGRadialGradientElementImpl : public SVGGradientElementImpl
 {
 public:
 	SVGRadialGradientElementImpl(DOM::ElementImpl *);

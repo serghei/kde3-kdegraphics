@@ -77,7 +77,7 @@ protected:
 	SVGMarkerElementImpl *m_marker;
 };
 
-class MarkerHelper
+class KDE_EXPORT MarkerHelper
 {
 protected:
 	void doStartMarker(SVGShapeImpl *shape, SVGStylableImpl *style, double x, double y, double angle = 0.0);
@@ -88,7 +88,7 @@ private:
 	void doMarker(SVGShapeImpl *shape, SVGStylableImpl *style, double x, double y, double angle, const QString &marker);
 };
 
-class CanvasText : public CanvasItem
+class KDE_EXPORT CanvasText : public CanvasItem
 {
 public:
 	CanvasText(SVGTextElementImpl *text);

@@ -30,7 +30,8 @@ namespace KSVG
 {
 
 class SVGAnimatedNumberImpl;
-class SVGStopElementImpl : public SVGElementImpl,
+
+class KDE_EXPORT SVGStopElementImpl : public SVGElementImpl,
 						   public SVGStylableImpl
 {
 public:

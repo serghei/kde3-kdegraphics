@@ -81,6 +81,8 @@ inline void * operator new(size_t, void * ptr) { return ptr; }
 #   define DJVUAPI __declspec(dllimport)
 #  endif
 # endif
+#else
+# define DJVUAPI __attribute__ ((visibility("default")))
 #endif
 #ifndef DJVUAPI
 # define DJVUAPI
