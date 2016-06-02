@@ -316,8 +316,8 @@ standard output.</para>
 the right arguments, as shown in this example:
 <screen width="60">
 <prompt>$</prompt> <command>dcop `dcopstart ksnapshot` interface</command><computeroutput>
-QCStringList interfaces()
-QCStringList functions()
+KStringList interfaces()
+KStringList functions()
 QString url()
 void slotGrab()
 void slotPrint()

@@ -104,8 +104,8 @@ int main(int argc, char **argv)
       QCString id = app.dcopClient()->registerAs("unique-kviewshell");
       if (id.isNull())
         kdError(1223) << "There was an error using dcopClient()->registerAs()." << endl;
-      QCStringList apps = app.dcopClient()->registeredApplications();
-      for ( QCStringList::Iterator it = apps.begin(); it != apps.end(); ++it )
+      KStringList apps = app.dcopClient()->registeredApplications();
+      for ( KStringList::Iterator it = apps.begin(); it != apps.end(); ++it )
       {
         if ((*it).find("kviewshell") == 0) 
         {

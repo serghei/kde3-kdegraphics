@@ -110,7 +110,7 @@ void kpMainWindow::slotHelpTakingScreenshots ()
 
     // TODO: Totally bogus logic if kwin not running under same user as KolourPaint.
     // SYNC: KWin contains PrintScreen key logic
-    QCStringList dcopApps = KApplication::dcopClient ()->registeredApplications ();
+    KStringList dcopApps = KApplication::dcopClient ()->registeredApplications ();
 #if DEBUG_KP_MAIN_WINDOW
     kdDebug () << "\tdcopApps=" << dcopApps << endl;
 #endif
