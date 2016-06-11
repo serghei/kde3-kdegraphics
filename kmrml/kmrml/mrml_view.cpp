@@ -24,7 +24,6 @@
 #include <qtooltip.h>
 
 #include <kcursor.h>
-#include <kdatastream.h>
 #include <klocale.h>
 #include <kcombobox.h>
 #include <kmimetype.h>

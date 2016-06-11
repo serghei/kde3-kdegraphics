@@ -31,7 +31,6 @@
 #include <kapplication.h>
 #include <kcombobox.h>
 #include <kconfig.h>
-#include <kdatastream.h>
 #include <kdebug.h>
 #include <kglobal.h>
 #include <klocale.h>

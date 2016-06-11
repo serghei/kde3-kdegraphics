@@ -19,7 +19,6 @@
 #include "mrml_elements.h"
 #include "mrml_shared.h"
 
-#include <kdatastream.h>
 
 #include <qdom.h>
 

@@ -7,8 +7,6 @@
 #include "watcher_stub.h"
 #include <dcopclient.h>
 
-#include <kdatastream.h>
-
 namespace KMrml {
 
 Watcher_stub::Watcher_stub( const QCString& app, const QCString& obj )

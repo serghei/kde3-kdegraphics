@@ -18,7 +18,6 @@
 
 #include "collectioncombo.h"
 
-#include <kdatastream.h>
 
 using namespace KMrml;
 
