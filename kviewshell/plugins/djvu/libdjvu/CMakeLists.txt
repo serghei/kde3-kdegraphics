@@ -37,5 +37,4 @@ kde_add_library( djvu STATIC_PIC
     DjVmDir.cpp DjVuImage.cpp GException.cpp GURL.cpp XMLTags.cpp DjVmDoc.cpp
     DjVuInfo.cpp GIFFManager.cpp IFFByteStream.cpp ZPCodec.cpp DjVuAnno.cpp
     DjVuMessage.cpp GMapAreas.cpp IW44EncodeCodec.cpp
-  DESTINATION ${LIB_INSTALL_DIR}
 )
