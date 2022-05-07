@@ -89,7 +89,7 @@ public:
     { initObj(objReal); real = realA; return this; }
   Object *initString(GString *stringA)
     { initObj(objString); string = stringA; return this; }
-  Object *initName(char *nameA)
+  Object *initName(const char *nameA)
     { initObj(objName); name = copyString(nameA); return this; }
   Object *initNull()
     { initObj(objNull); return this; }
@@ -135,9 +135,9 @@ public:
   GBool isNone() { return type == objNone; }
 
   // Special type checking.
-  GBool isName(char *nameA)
+  GBool isName(const char *nameA)
     { return type == objName && !strcmp(name, nameA); }
-  GBool isDict(char *dictType);
+  GBool isDict(const char *dictType);
   GBool isStream(char *dictType);
   GBool isCmd(char *cmdA)
     { return type == objCmd && !strcmp(cmd, cmdA); }
@@ -165,10 +165,10 @@ public:
 
   // Dict accessors.
   int dictGetLength();
-  void dictAdd(char *key, Object *val);
-  GBool dictIs(char *dictType);
-  Object *dictLookup(char *key, Object *obj);
-  Object *dictLookupNF(char *key, Object *obj);
+  void dictAdd(const char *key, Object *val);
+  GBool dictIs(const char *dictType);
+  Object *dictLookup(const char *key, Object *obj);
+  Object *dictLookupNF(const char *key, Object *obj);
   char *dictGetKey(int i);
   Object *dictGetVal(int i, Object *obj);
   Object *dictGetValNF(int i, Object *obj);
@@ -240,19 +240,19 @@ inline Object *Object::arrayGetNF(int i, Object *obj)
 inline int Object::dictGetLength()
   { return dict->getLength(); }
 
-inline void Object::dictAdd(char *key, Object *val)
+inline void Object::dictAdd(const char *key, Object *val)
   { dict->add(key, val); }
 
-inline GBool Object::dictIs(char *dictType)
+inline GBool Object::dictIs(const char *dictType)
   { return dict->is(dictType); }
 
-inline GBool Object::isDict(char *dictType)
+inline GBool Object::isDict(const char *dictType)
   { return type == objDict && dictIs(dictType); }
 
-inline Object *Object::dictLookup(char *key, Object *obj)
+inline Object *Object::dictLookup(const char *key, Object *obj)
   { return dict->lookup(key, obj); }
 
-inline Object *Object::dictLookupNF(char *key, Object *obj)
+inline Object *Object::dictLookupNF(const char *key, Object *obj)
   { return dict->lookupNF(key, obj); }
 
 inline char *Object::dictGetKey(int i)

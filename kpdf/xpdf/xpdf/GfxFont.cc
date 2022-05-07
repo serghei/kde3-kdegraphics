@@ -33,8 +33,8 @@
 //------------------------------------------------------------------------
 
 struct StdFontMapEntry {
-  char *altName;
-  char *properName;
+  const char *altName;
+  const char *properName;
 };
 
 // Acrobat 4.0 and earlier substituted Base14-compatible fonts without

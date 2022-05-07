@@ -194,7 +194,7 @@ void FoFiType1::parse() {
     // get encoding
     } else if (!encoding &&
 	       !strncmp(line, "/Encoding StandardEncoding def", 30)) {
-      encoding = fofiType1StandardEncoding;
+      encoding = const_cast<char**>(fofiType1StandardEncoding);
     } else if (!encoding &&
 	       !strncmp(line, "/Encoding 256 array", 19)) {
       encoding = (char **)gmallocn(256, sizeof(char *));

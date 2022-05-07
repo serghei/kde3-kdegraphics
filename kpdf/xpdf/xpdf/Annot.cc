@@ -1391,7 +1391,7 @@ void Annot::drawCircleBottomRight(double cx, double cy, double r) {
 }
 
 // Look up an inheritable field dictionary entry.
-Object *Annot::fieldLookup(Dict *field, char *key, Object *obj) {
+Object *Annot::fieldLookup(Dict *field, const char *key, Object *obj) {
   Dict *dict;
   Object parent;
 

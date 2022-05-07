@@ -129,7 +129,7 @@ Gushort *FoFiType1C::getCIDToGIDMap(int *nCIDs) {
   return map;
 }
 
-void FoFiType1C::convertToType1(char *psName, char **newEncoding, GBool ascii,
+void FoFiType1C::convertToType1(const char *psName, char **newEncoding, GBool ascii,
 				FoFiOutputFunc outputFunc,
 				void *outputStream) {
   int psNameLen;
@@ -1066,7 +1066,7 @@ void FoFiType1C::convertToType0(char *psName,
   gfree(cidMap);
 }
 
-void FoFiType1C::eexecCvtGlyph(Type1CEexecBuf *eb, char *glyphName,
+void FoFiType1C::eexecCvtGlyph(Type1CEexecBuf *eb, const char *glyphName,
 			       int offset, int nBytes,
 			       Type1CIndex *subrIdx,
 			       Type1CPrivateDict *pDict) {
@@ -1792,7 +1792,7 @@ void FoFiType1C::cvtNum(double x, GBool isFP, GString *charBuf) {
   charBuf->append((char *)buf, n);
 }
 
-void FoFiType1C::eexecWrite(Type1CEexecBuf *eb, char *s) {
+void FoFiType1C::eexecWrite(Type1CEexecBuf *eb, const char *s) {
   Guchar *p;
   Guchar x;
 
@@ -2261,10 +2261,10 @@ void FoFiType1C::buildEncoding() {
   int pos, c, sid, nLeft, nSups, i, j;
 
   if (topDict.encodingOffset == 0) {
-    encoding = fofiType1StandardEncoding;
+    encoding = const_cast<char**>(fofiType1StandardEncoding);
 
   } else if (topDict.encodingOffset == 1) {
-    encoding = fofiType1ExpertEncoding;
+    encoding = const_cast<char**>(fofiType1ExpertEncoding);
 
   } else {
     encoding = (char **)gmallocn(256, sizeof(char *));

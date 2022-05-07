@@ -40,7 +40,7 @@ Dict::~Dict() {
   gfree(entries);
 }
 
-void Dict::add(char *key, Object *val) {
+void Dict::add(const char *key, Object *val) {
   if (length == size) {
     if (length == 0) {
       size = 8;
@@ -49,12 +49,12 @@ void Dict::add(char *key, Object *val) {
     }
     entries = (DictEntry *)greallocn(entries, size, sizeof(DictEntry));
   }
-  entries[length].key = key;
+  entries[length].key = copyString(key);
   entries[length].val = *val;
   ++length;
 }
 
-inline DictEntry *Dict::find(char *key) {
+inline DictEntry *Dict::find(const char *key) {
   int i;
 
   for (i = 0; i < length; ++i) {
@@ -64,19 +64,19 @@ inline DictEntry *Dict::find(char *key) {
   return NULL;
 }
 
-GBool Dict::is(char *type) {
+GBool Dict::is(const char *type) {
   DictEntry *e;
 
   return (e = find("Type")) && e->val.isName(type);
 }
 
-Object *Dict::lookup(char *key, Object *obj) {
+Object *Dict::lookup(const char *key, Object *obj) {
   DictEntry *e;
 
   return (e = find(key)) ? e->val.fetch(xref, obj) : obj->initNull();
 }
 
-Object *Dict::lookupNF(char *key, Object *obj) {
+Object *Dict::lookupNF(const char *key, Object *obj) {
   DictEntry *e;
 
   return (e = find(key)) ? e->val.copy(obj) : obj->initNull();

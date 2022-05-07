@@ -975,7 +975,7 @@ void Part::slotShowMenu(const KPDFPage *page, const QPoint &point)
 				m_document->toggleBookmark( page->number() );
 				break;
 			case 2:
-				m_pageView->fitPageWidth( page->number() );
+                m_pageView->fitPageWidth( page->number() );
 				break;
 	//		case 3: // switch to edit mode
 	//			break;

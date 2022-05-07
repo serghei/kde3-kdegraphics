@@ -95,7 +95,7 @@ private:
   void drawCircle(double cx, double cy, double r, GBool fill);
   void drawCircleTopLeft(double cx, double cy, double r);
   void drawCircleBottomRight(double cx, double cy, double r);
-  Object *fieldLookup(Dict *field, char *key, Object *obj);
+  Object *fieldLookup(Dict *field, const char *key, Object *obj);
 
   XRef *xref;			// the xref table for this PDF file
   Ref ref;			// object ref identifying this annotation

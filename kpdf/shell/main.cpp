@@ -70,7 +70,7 @@ int main(int argc, char** argv)
             for (int i = 0; i < args->count(); ++i)
             {
                 KPDF::Shell* widget = new KPDF::Shell(args->url(i));
-                widget->show();
+                widget->showMaximized();
             }
         }
         args->clear();

@@ -22,7 +22,7 @@
 
 #include <kdebug.h>
 
-void CDECL error(int pos, char *msg, ...) {
+void CDECL error(int pos, const char *msg, ...) {
   va_list args;
   QString emsg, tmsg;
   char buffer[1024]; // should be big enough

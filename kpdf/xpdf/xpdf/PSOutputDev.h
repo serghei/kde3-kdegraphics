@@ -48,7 +48,7 @@ enum PSFileType {
   psGeneric			// write to a generic stream
 };
 
-typedef void (*PSOutputFunc)(void *stream, char *data, int len);
+typedef void (*PSOutputFunc)(void *stream, const char *data, int len);
 
 class PSOutputDev: public OutputDev {
 public:
@@ -291,10 +291,10 @@ private:
 #endif
   void cvtFunction(Function *func);
   void writePSChar(char c);
-  void writePS(char *s);
+  void writePS(const char *s);
   void writePSFmt(const char *fmt, ...);
   void writePSString(GString *s);
-  void writePSName(char *s);
+  void writePSName(const char *s);
   GString *filterPSName(GString *name);
   void writePSTextLine(GString *s);
 

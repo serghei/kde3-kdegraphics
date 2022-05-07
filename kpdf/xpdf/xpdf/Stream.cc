@@ -85,7 +85,7 @@ char *Stream::getLine(char *buf, int size) {
   return buf;
 }
 
-GString *Stream::getPSFilter(int /*psLevel*/, char * /*indent*/) {
+GString *Stream::getPSFilter(int /*psLevel*/, const char * /*indent*/) {
   return new GString();
 }
 

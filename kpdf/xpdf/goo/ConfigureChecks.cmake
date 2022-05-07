@@ -9,6 +9,8 @@
 #
 #################################################
 
+include( CheckIncludeFile )
+
 check_include_file( "dirent.h" HAVE_DIRENT_H )
 if( NOT HAVE_DIRENT_H )
   check_include_file( "sys/ndir.h" HAVE_SYS_NDIR_H )
