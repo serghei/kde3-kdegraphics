@@ -24,7 +24,7 @@ include_directories(
 
 ##### djvu (shared) #############################
 
-kde_add_library( djvu SHARED
+kde_add_library( djvu STATIC_PIC
   SOURCES
     Arrays.cpp DjVuDocEditor.cpp DjVuMessageLite.cpp GOS.cpp IW44Image.cpp
     BSByteStream.cpp DjVuDocument.cpp DjVuNavDir.cpp GPixmap.cpp JB2EncodeCodec.cpp

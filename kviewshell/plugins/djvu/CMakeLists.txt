@@ -42,6 +42,6 @@ kde_add_kpart( djvuviewpart AUTOMOC
     kprintDialogPage_DJVUconversionoptions.cpp
     kprintDialogPage_DJVUconversionoptions_basewidget.ui
     pageRangeWidget_base.ui pageRangeWidget.cpp prefs.kcfgc
-  LINK djvu-shared kmultipage-shared
+  LINK djvu-static kmultipage-shared
   DESTINATION ${PLUGIN_INSTALL_DIR}
 )
